@@ -1,0 +1,70 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.cat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 450px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background-position: -10px -10px;
+
+}
+
+.cat div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bongo-cat-sprites{
+  background-image: url('../images/spritesheet.png');
+
+}
+.cat-bongo{
+  background-position: -480px -10px;
+
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.cat-paw--left{
+  background-position: -950px -10px;
+
+}
+
+.cat-paw--right{
+  background-position: -950px -480px;
+}
+
+.cat-hit--left{
+  background-position: -10px -480px;
+
+}
+
+.cat-hit--right{
+  background-position: -480px -480px;
+
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  transition: all 1000ms ease-in-out;
+}
+
+
+
