@@ -23,10 +23,12 @@ createjs.Sound.registerSound("mp3/low.mp3", bongoLow);
       case 'ArrowLeft':
         pawLeft.classList.remove('hide');
         hitLeft.classList.remove('hide');
+        createjs.Sound.play(bongoLow);
         break;
       case 'ArrowRight':
         pawRight.classList.remove('hide');
         hitRight.classList.remove('hide');
+        createjs.Sound.play(bongoHi);
         break;
     }
   });
@@ -36,12 +38,10 @@ createjs.Sound.registerSound("mp3/low.mp3", bongoLow);
       case 'ArrowLeft':
         pawLeft.classList.add('hide');
         hitLeft.classList.add('hide');
-        createjs.Sound.play(bongoLow);
         break;
         case 'ArrowRight':
         pawRight.classList.add('hide');
         hitRight.classList.add('hide');
-        createjs.Sound.play(bongoHi);
         break;
     }
   });
